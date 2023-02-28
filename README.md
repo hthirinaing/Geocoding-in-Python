@@ -5,7 +5,7 @@ Geocoding in Python with geopy
 
 You can quickly find various kinds of locations through geocoding. The types of locations that you can search for include points of interest or names from a gazetteer, like mountains, bridges, and stores and addresses, which can come in a variety of styles and formats, including street intersections, house numbers with street names, and postal codes.
 
-![This is an image]([https://myoctocat.com/assets/images/base-octocat.svg](https://nascenia.com/wp-content/uploads/2021/02/google-maps-track13.png))
+![Locations](https://nascenia.com/wp-content/uploads/2021/02/google-maps-track13.png)
 
 In this tutorial, I will show you how to perform geocoding in Python with the help of Geopy library. Let's install these libraries with Pip if you have already Anaconda environment setup.
 
