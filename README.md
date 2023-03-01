@@ -29,5 +29,7 @@ location = geolocator.geocode("London Eye, London, UK")
 ```
 ```
 print("Latitude = {}, Longitude = {}".format(location.latitude, location.longitude))
+```
+```
 Latitude = 51.5033416, Longitude = -0.11967649999999999
 ```
