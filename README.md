@@ -13,3 +13,17 @@ In this tutorial, I will show you how to perform **geocoding in Python** with th
 pip install geopandas
 pip install geopy
 ```
+
+**Geopy python library** can be used to geolocate a signle address.  Geopy has different Geocoding services that you can choose from, including Google Maps, ArcGIS, AzureMaps, Bing, etc. Some of them require API keys, while others do not need.
+
+![This is image](https://user-images.githubusercontent.com/112382236/222022804-51ced65a-52d5-4214-bb4d-53a6fc016cd4.png)
+
+### Geocoding single address
+
+We will use Nominatim Geocoding service, which is built on top of OpenStreetMap data. Let's Geocode a single address, London Eye in London.
+
+```
+from geopy.geocoders import Nominatim
+geolocator = geolocator = Nominatim(user_agent="myGeocoder")
+location = geolocator.geocode("London Eye, London, UK")
+```
