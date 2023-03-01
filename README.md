@@ -27,9 +27,23 @@ from geopy.geocoders import Nominatim
 geolocator = geolocator = Nominatim(user_agent="myGeocoder")
 location = geolocator.geocode("London Eye, London, UK")
 ```
+We create geolocator that holds the Geocoding service, Nominatim. Then we pass the locator we created to geocode any address, in this example, the London Eye address.
+
 ```
 print("Latitude = {}, Longitude = {}".format(location.latitude, location.longitude))
 ```
+Now, we can print out the coordinates of the location we have created.
+
 ```
 Latitude = 51.5033416, Longitude = -0.11967649999999999
 ```
+
+```
+location_rev = geolocator.reverse("16.79906325, 96.14942259240468")
+print(location_rev)
+```
+```
+Shwedagon Pagoda, Southern Stairway, ဒဂုံ, Western District, Yangon, ရန်ကုန်တိုင်းဒေသကြီး, 11191, မြန်မာ
+```
+
+In the next tutorial, we will leran more how to ***geocode many addresses*** from Pandas Dataframe.
